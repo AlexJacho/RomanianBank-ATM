@@ -13,5 +13,9 @@ public class Main {
         if (soldFinal > 0 && pin == 1234) {
             System.out.println("Acces acordat");
         }
+
+        soldFinal++;
+        String stare = (soldFinal < 0) ? "Datoria" : "Credit";
+        System.out.println("Starea contului: " + stare);
     }
 }
